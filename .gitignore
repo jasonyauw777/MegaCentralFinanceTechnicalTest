@@ -1,5 +1,3 @@
 .vs
-MegaCentralFinanceBackend/bin/*
-MegaCentralFinanceBackend/obj/*
-MegaFinanceFrontend/bin/*
-MegaFinanceFrontend/obj/*
+**/bin/
+**/obj/
