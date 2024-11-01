@@ -1,0 +1,36 @@
+USE MegaCentralFinanceTest
+
+-- QUERY TEST SOAL
+
+-- CREATE TABLE CABANG
+CREATE TABLE Cabang(
+	KodeCabang VARCHAR(10) PRIMARY KEY,
+	NamaCabang VARCHAR(10)
+);
+
+-- CREATE TABLE MOTOR
+CREATE TABLE Motor(
+	KodeMotor VARCHAR(10) PRIMARY KEY,
+	NamaMotor VARCHAR(10)
+);
+
+-- CREATE TABLE PEMBAYARAN
+CREATE TABLE Pembayaran(
+	NoKontrak VARCHAR(30),
+	TglBayar DATETIME,
+	JumlahBayar FLOAT,
+	KodeCabang VARCHAR(10),
+	NoKwintasi VARCHAR(30),
+	KodeMotor VARCHAR(10),
+	CONSTRAINT FK_KodeCabang FOREIGN KEY (KodeCabang)
+	REFERENCES Cabang(KodeCabang),
+	CONSTRAINT FK_KodeMotor FOREIGN KEY (KodeMotor)
+	REFERENCES Motor(KodeMotor),
+);
+
+-- ROLLBACK CREATE TABLE
+ALTER TABLE Pembayaran
+DROP CONSTRAINT FK_KodeCabang, FK_KodeMotor
+DROP TABLE Pembayaran
+DROP TABLE Cabang
+DROP TABLE Motor
