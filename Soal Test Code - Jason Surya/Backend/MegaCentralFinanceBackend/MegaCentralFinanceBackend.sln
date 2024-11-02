@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35201.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MegaCentralFinanceBackend", "MegaCentralFinanceBackend.csproj", "{28DB8795-943D-41F6-A933-1F775E26A83A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28DB8795-943D-41F6-A933-1F775E26A83A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28DB8795-943D-41F6-A933-1F775E26A83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28DB8795-943D-41F6-A933-1F775E26A83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DB8795-943D-41F6-A933-1F775E26A83A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B64C7F45-FF9D-4AD7-BC1C-DF2E4402ADC7}
+	EndGlobalSection
+EndGlobal
